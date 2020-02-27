@@ -1,5 +1,6 @@
 import random
 from random import randint
+import time
 
 
 def step1():
@@ -95,6 +96,7 @@ def step4():
 def step5(money):
     print("🦆 пошел с 💲💲💲 выпить с друзьями!")
     print("\033[1m {} \033[0m".format("A few moments later..."))
+    time.sleep(5)
     if money <= 500:
         print("🦆 потратил все взятые деньги, но зато хорошо отдохнул! 😊")
     else:

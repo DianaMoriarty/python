@@ -9,3 +9,9 @@ python morse.py -v -o ELLIPSIS
 ```python
 pytest -v
 ```
+
+## issue-03
+Для запуска теста:
+```python
+python unit_test.py
+```

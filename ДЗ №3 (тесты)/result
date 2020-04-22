@@ -1,0 +1,25 @@
+(venv) C:\Users\Diana\PycharmProjects\myfirstproject>python morse.py -v -o ELLIPSIS
+Trying:
+    encode("DIANA")
+Expecting:
+    '-.. .. .- -. .-'
+ok
+Trying:
+    encode("SOS")
+Expecting:
+    '... --- ...'
+ok
+Trying:
+    encode("SoS")
+Expecting:
+    Traceback (most recent call last):
+    ...
+    KeyError: 'o'
+ok
+Trying:
+    encode("SOS ") #doctest: +NORMALIZE_WHITESPACE
+Expecting:
+    '... --- ... '
+ok
+4 passed and 0 failed.
+Test passed.

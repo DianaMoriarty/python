@@ -28,6 +28,8 @@ MORSE_TO_LETTER = {
 def encode(message: str) -> str:
     """
     Кодирует строку в соответсвие с таблицей азбуки Морзе
+    >>> encode("DIANA")
+    '-.. .. .- -. .-'
     >>> encode("SOS")
     '... --- ...'
     >>> encode("SoS")
@@ -53,7 +55,7 @@ def decode(morse_message: str) -> str:
 
 if __name__ == '__main__':
     doctest.testmod()
-    print(encode("SOS"))
+    print(encode("DIANA"))
     morse_msg = '-- .- .. -....- .--. -.-- - .... --- -. -....- ' \
                 '..--- ----- .---- ----.'
     decoded_msg = decode(morse_msg)

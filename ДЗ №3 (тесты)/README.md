@@ -15,3 +15,10 @@ pytest -v
 ```python
 python unit_test.py
 ```
+
+## issue-03
+Для запуска теста:
+```python
+pytest pytest_one_hot.py
+
+```

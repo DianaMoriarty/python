@@ -16,9 +16,8 @@ pytest -v
 python unit_test.py
 ```
 
-## issue-03
+## issue-04
 Для запуска теста:
 ```python
 pytest pytest_one_hot.py
-
 ```

@@ -2,5 +2,5 @@
 
 Для запуска теста:
 ```python
-python morze.py -v -o ELLIPSIS
+python morse.py -v -o ELLIPSIS
 ```

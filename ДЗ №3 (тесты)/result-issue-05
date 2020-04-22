@@ -1,0 +1,11 @@
+(venv) C:\Users\Diana\PycharmProjects\myfirstproject>pytest what_is_year_now.py
+============================================================================================== test session starts ==============================================================================================
+platform win32 -- Python 3.7.4, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: C:\Users\Diana\PycharmProjects\myfirstproject
+plugins: cov-2.8.1
+collected 3 items                                                                                                                                                                                                
+
+what_is_year_now.py ...                                                                                                                                                                                    [100%]
+
+=============================================================================================== 3 passed in 0.05s ===============================================================================================
+

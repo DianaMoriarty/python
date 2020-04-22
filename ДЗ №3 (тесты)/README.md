@@ -21,3 +21,9 @@ python unit_test.py
 ```python
 pytest pytest_one_hot.py
 ```
+
+## issue-05
+Для запуска теста:
+```python
+pytest what_is_year_now.py
+```

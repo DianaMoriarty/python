@@ -33,7 +33,9 @@ def encode(message: str) -> str:
     >>> encode("SOS")
     '... --- ...'
     >>> encode("SoS")
-    '... --- ...'
+    Traceback (most recent call last):
+    ...
+    KeyError: 'o'
     >>> encode("SOS ") #doctest: +NORMALIZE_WHITESPACE
     '... --- ... '
     """
@@ -55,9 +57,3 @@ def decode(morse_message: str) -> str:
 
 if __name__ == '__main__':
     doctest.testmod()
-    print(encode("DIANA"))
-    morse_msg = '-- .- .. -....- .--. -.-- - .... --- -. -....- ' \
-                '..--- ----- .---- ----.'
-    decoded_msg = decode(morse_msg)
-    print(decoded_msg)
-    assert morse_msg == encode(decoded_msg)

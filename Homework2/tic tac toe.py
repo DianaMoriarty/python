@@ -1,6 +1,7 @@
 from random import randint, choice
 DICTS = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5}
 
+
 # функция возвращает размерность доски, введеную пользователем (есть проверка ввода)
 def start() -> int:
     print("Добро пожаловать в игру 'Крестики нолики'!")
@@ -14,6 +15,7 @@ def start() -> int:
         else:
             print("Число не в диапазоне. Попробуйте снова")
     return int(n)
+
 
 # в зависимости от размерности доски возвращается список выигрышных комбинаций
 def winComb(n: int) -> tuple:
@@ -32,6 +34,7 @@ def winComb(n: int) -> tuple:
             combinations += (diag,)
     return combinations
 
+
 def who():
     print("С кем вы хотите сыграть? C другом (f) или компьютером (с)?")
     option = ''
@@ -40,6 +43,7 @@ def who():
         print('Выберите: {}/{}'.format(*options))
         option = input()
     return options[option]
+
 
 def valuesOfDict(n: int) -> list:
     mylist = []
@@ -118,6 +122,7 @@ def player_move(arr: list, n: int, player: str, players: int):
         else:
             print("Некорректный ввод. Попробуйте еще раз:")
 
+            
 def select_random(foe):
     if foe:
         players = ('Player 1', 'Player 2')
@@ -156,6 +161,7 @@ def computer_move(arr: list, n: int, player: str):  #попытка создан
             new_arr[i] = ''
     arr[choice(freeCells)] = player #иначе ставим рандомно
 
+    
 if __name__ == '__main__':
     N = start()
     arr = (['']) * N ** 2

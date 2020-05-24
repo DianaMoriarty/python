@@ -19,7 +19,7 @@ class Advert:
         if not self.__dict__.get('title'):
             raise ValueError("advert must have title")
         if self.price < 0:
-            raise ValueError('must be >= 0')
+            raise ValueError("price must be >= 0")
 
     repr_color_code = 33  # yellow
 

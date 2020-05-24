@@ -4,6 +4,7 @@ import json
 class Advert:
     """Класс для объявлений"""
     def __init__(self, s):
+        self.price = 0
         if isinstance(s, str):
             data = json.loads(s)
         else:
@@ -19,8 +20,6 @@ class Advert:
             raise ValueError("advert must have title")
         if self.price < 0:
             raise ValueError('must be >= 0')
-        if not self.__dict__.get('price'):
-            self.price = 0
 
     repr_color_code = 33  # yellow
 
@@ -55,7 +54,3 @@ if __name__ == '__main__':
             "address": "сельское поселение Ельдигинское, поселок санатория Тишково, 25"
         }
     }
-    iphone_ad = Advert(adv_dict_1)
-    print(iphone_ad)
-    corgi = Advert(adv_dict_2)
-    print(corgi)
